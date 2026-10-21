@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <!-- Meta viewport sangat penting agar web tampil rapi di HP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Digital - Kafe Senja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Kafe Senja ☕</h1>
+        <p>Pesan langsung dari mejamu!</p>
+    </header>
+
+    <!-- Tombol Filter Kategori -->
+    <div class="kategori-container">
+        <button class="btn-kategori aktif" onclick="filterMenu('semua')">Semua</button>
+        <button class="btn-kategori" onclick="filterMenu('makanan')">Makanan</button>
+        <button class="btn-kategori" onclick="filterMenu('minuman')">Minuman</button>
+        <button class="btn-kategori" onclick="filterMenu('camilan')">Camilan</button>
+    </div>
+
+    <!-- Tempat Menu Ditampilkan -->
+    <main id="daftar-menu" class="menu-container">
+        <!-- Menu akan dimunculkan di sini oleh JavaScript -->
+    </main>
+
+    <!-- Keranjang Belanja Mengapung di Bawah -->
+    <div id="keranjang" class="keranjang-container sembunyi">
+        <div class="info-keranjang">
+            <span id="total-item">0 Item</span>
+            <span id="total-harga">Rp 0</span>
+        </div>
+        <button id="btn-pesan" onclick="kirimKeWhatsApp()">Pesan via WA</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
