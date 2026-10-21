@@ -1,1 +1,1 @@
-# style.css
+# PELATIHAN TIK
